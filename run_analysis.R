@@ -18,6 +18,17 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 
 [Previously saved workspace restored]
+>filename <- "Coursera_DS3_Final.zip"
+
+
+>if (!file.exists(filename)){ fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
++download.file(fileURL, filename, method="curl")
++}  
+
+
+>if (!file.exists("UCI HAR Dataset")) { 
++ unzip(filename) 
++}
 
 > features <- read.table("UCI HAR Dataset/features.txt", col.names = c("n","functions"))
 > activities <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
@@ -36,13 +47,13 @@ Error in Merged_Data %>% select(subject, code, contains("mean"), contains("std")
   could not find function "%>%"
 > library(dplyr)
 
-Attaching package: ‘dplyr’
+Attaching package: â€˜dplyrâ€™
 
-The following objects are masked from ‘package:stats’:
+The following objects are masked from â€˜package:statsâ€™:
 
     filter, lag
 
-The following objects are masked from ‘package:base’:
+The following objects are masked from â€˜package:baseâ€™:
 
     intersect, setdiff, setequal, union
 
