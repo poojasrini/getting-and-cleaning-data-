@@ -1,13 +1,15 @@
 The run_analysis.R script performs the data preparation and then followed by the 5 steps required as described in the course project’s definition.
 
-1)Download the dataset
-        Dataset downloaded and extracted under the folder called UCI HAR Dataset
+1)Download the dataset-Dataset downloaded and extracted under the folder called UCI HAR Dataset
 
 2)Assign each data to variables
+
 features <- features.txt :contains 561 rows, 2 columns
+
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
   
 activities <- activity_labels.txt :contains 6 rows, 2 columns
+
 List of activities performed when the corresponding measurements were taken and its codes (labels)
   
   subject_test <- test/subject_test.txt : contains 2947 rows, 1 column
