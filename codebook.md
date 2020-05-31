@@ -20,6 +20,7 @@ The run_analysis.R script performs the data preparation and then followed by the
   
     contains recorded features test data
   
+
   y_test <- test/y_test.txt : 2947 rows, 1 columns
   
     contains test data of activities’code labels
